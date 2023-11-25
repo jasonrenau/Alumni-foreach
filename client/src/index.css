@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-poppins text-4xl;
+  }
+  h2 {
+    @apply font-poppins text-3xl;
+  }
+  h3 {
+    @apply font-poppins text-2xl;
+  }
+  h4 {
+    @apply font-poppins text-xl;
+  }
+  h5 {
+    @apply font-poppins text-lg;
+  }
+  h6 {
+    @apply font-poppins text-base;
+  }
+  p,
+  span,
+  label,
+  button,
+  input,
+  a {
+    @apply font-cabin text-base text-gray-950;
+  }
+}
+
+.btn-blue {
+  @apply rounded-md  bg-pblue-500 px-3 py-2 text-gray-950 transition-all duration-300 ease-in-out hover:bg-pblue-400;
+}
+.btn-green {
+  @apply rounded-md  bg-pgreen-500 px-3 py-2 text-gray-950 transition-all duration-300 ease-in-out hover:bg-pgreen-400;
+}
+.btn-red {
+  @apply rounded-md  bg-red-500 px-3 py-2 text-gray-950 transition-all duration-300 ease-in-out hover:bg-red-600;
+}
+.btn-basic {
+  @apply rounded-md border-2 border-gray-300 px-2 py-1 duration-300 hover:scale-105  hover:border-gray-400 hover:bg-white;
+}
+
+.input {
+  @apply mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-gray-500 focus:outline-none focus:ring-gray-500 sm:text-sm;
+}
+.react-datepicker-popper {
+  @apply z-10;
+}
